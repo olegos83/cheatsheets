@@ -6,6 +6,12 @@
 		private $age = 25;     //visible only inside current class
 		protected $id = 888;   //visible only inside current class and its child classes
 
+		//properties with declared type (type and value are optional)
+		public int $intValue = 10;
+		public float $floatValue = 10.7777;
+		public string $stringValue = "this is optional";
+		public array $array = [];
+
 		//constructor is defined using '__construct' method name and invoked when class is instantiated
 		function __construct($name = 'Vasyok') {
 			//'$this' is used to access instance of the class inside class itself
@@ -29,6 +35,14 @@
 		public function showInfo() {
 			//{} is used to call method inside string
 			echo "Age: {$this->getAge()}, id: {$this->getId()}\n";
+		}
+
+		//method with typed arguments and return type (types are optional)
+		public function setTypedProps(int $i, float $f, string $str, array $arr): void {
+			$this->intValue = $i;
+			$this->floatValue = $f;
+			$this->stringValue = $str;
+			$this->array = $arr;
 		}
 
 		//static properties
