@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BEM</title>
+		<link rel="stylesheet" type="text/css" href="BEM.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<h1 class="title">BEM</h1>
+			<h2 class="subtitle">Block &bull; Element &bull; Modifier</h2>
+		</header>
+
+		<hr>
+
+		<main>
+			<section class="bem-abbr">
+				<div class="bem-abbr__part">
+					<div class="bem-letter">
+						<div class="bem-letter__icon">B</div>
+						<div class="bem-letter__word">Block</div>
+						<div class="bem-letter__definition">A standalone, reusable page component</div>
+					</div>
+				</div>
+
+				<div class="bem-abbr__part">
+					<div class="bem-letter">
+						<div class="bem-letter__icon">E</div>
+						<div class="bem-letter__word">Element</div>
+						<div class="bem-letter__definition">A part of the block without standalone meaning</div>
+					</div>
+				</div>
+
+				<div class="bem-abbr__part">
+					<div class="bem-letter">
+						<div class="bem-letter__icon">M</div>
+						<div class="bem-letter__word">Modifier</div>
+						<div class="bem-letter__definition">Changes appearance, behavior or state of the block/element</div>
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<section>
+				<article>
+					<h3>BEM basic principles in HTML/CSS</h3>
+					<h4>Block</h4>
+
+					<ul>
+						<li>Block is a standalone, reusable page component.</li>
+						<li>Block can be nested to another block or element.</li>
+						<li>To make block more reusable try not to use margins and paddings in its style.</li>
+						<li>Name each block semantically to represent its functionality.</li>
+						<li>CSS class naming pattern: <span class="css-name">block-name</span>.</li>
+					</ul>
+
+					<h4>Element</h4>
+
+					<ul>
+						<li>Element is always a part of the block.</li>
+						<li>Element must not be used outside the block. It has no standalone meaning and is semantically tied to its block.</li>
+						<li>Element can be nested to other element, but it always belongs to its block (not parent element).</li>
+						<li>Element is optional block part and not all blocks have elements.</li>
+						<li>CSS class naming pattern: <span class="css-name">block-name__elem-name</span>.</li>
+					</ul>
+
+					<h4>Modifier</h4>
+
+					<ul>
+						<li>Modifier is used to change appearance, behavior or state of the block/element.</li>
+						<li>Modifier is an extra class name which you add to a block/element DOM node.</li>
+						<li>Add modifier class only to block/element you wnat to modify after its original class name.</li>
+						<li>CSS class naming pattern: <span class="css-name">block-name__elem-name_mod-name</span>.</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

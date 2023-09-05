@@ -1,0 +1,37 @@
+/* CSS reset */
+* { margin: 0; padding: 0; border: 0; }
+*,*:before, *:after { box-sizing: border-box; }
+:focus, :active { outline: none; }
+html, body { width: 100%; height: 100%; font-size: 100%; line-height: 1; font-size: 14px; }
+header, footer, nav, aside, section, code { display: block; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+input, button, textarea { font-family: inherit; }
+button { cursor: pointer; }
+ul li { list-style: none; }
+img { vertical-align: top; }
+a:focus, a:active { outline: none; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* Pseudoelements */
+body { padding: 30px; }
+
+.text { margin: 0 0 30px 0; line-height: 34px; font-size: 24px; }
+.text:first-letter { color: #f00; font-size: 38px; }
+.text:first-line { color: #0f0; }
+
+.list { margin: 0 0 30px 0; line-height: 24px; font-size: 18px; }
+.list li:before { content: '⇒'; background: #0f0; padding: 0 5px; }
+.list li:after { content: '⇐'; background: #00f;  padding: 0 5px; }
+
+.list2 { line-height: 24px; font-size: 18px; }
+
+.list2 li:before {
+	content: ''; display: inline-block;
+	position: relative; top: -2px;
+	width: 7px; height: 7px;
+	margin-right: 5px;
+	background-color: #000; border-radius: 50%;
+}
+
+.list2 li:hover:before { background-color: #f00; }

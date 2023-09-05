@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<title>Adaptive images</title>
+		<link rel="stylesheet" type="text/css" href="adaptive_images.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<section class="text">
+					<h2 class="text__title title">Text</h2>
+
+					<div class="text__image">
+						<picture>
+							<source srcset="img/400x600.jpg" type="image/jpeg" media="(max-width: 400px)">
+							<source srcset="img/800x400.jpg" type="image/jpeg" media="(max-width: 800px)">
+							<img src="img/1300x400.jpg" alt="">
+						</picture>
+					</div>
+
+					<div class="text__value">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+					</div>
+
+					<div class="text__image">
+						<img src="img/800x400.jpg" alt="">
+					</div>
+
+					<div class="text__value">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque nesciunt adipisci.</p>
+					</div>
+				</section>
+
+				<section class="cards">
+					<h2 class="cards__title title">Cards (three columns)</h2>
+
+					<div class="cards__row">
+						<div class="cards__col">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="img/800x400.jpg" alt="">
+								</div>
+
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+
+						<div class="cards__col">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="img/400x600.jpg" alt="">
+								</div>
+
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+
+						<div class="cards__col">
+							<div class="cards__item">
+								<div class="cards__image">
+									<img src="img/1300x200.jpg" alt="">
+								</div>
+
+								<div class="cards__body">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti a voluptatibus autem eaque aut nisi quis ex sequi! Ducimus necessitatibus deleniti mollitia ex dignissimos odio obcaecati totam est nesciunt?
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="items">
+					<h2 class="items__title title">Cards (in row)</h2>
+
+					<div class="items__item">
+						<div class="items__image">
+							<img src="img/1300x400.jpg" alt="">
+						</div>
+
+						<div class="items__body">
+							<div class="items__label">Title</div>
+							<div class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.</div>
+						</div>
+					</div>
+
+					<div class="items__item">
+						<div class="items__image">
+							<img src="img/400x600.jpg" alt="">
+						</div>
+
+						<div class="items__body">
+							<div class="items__label">Title</div>
+							<div class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.</div>
+						</div>
+					</div>
+
+					<div class="items__item">
+						<div class="items__image">
+							<img src="img/800x400.jpg" alt="">
+						</div>
+
+						<div class="items__body">
+							<div class="items__label">Title</div>
+							<div class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam tempore ea animi quo nemo quasi quaerat voluptatem magni perferendis sequi distinctio veritatis, accusantium, unde modi repellendus nostrum ut fuga.</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

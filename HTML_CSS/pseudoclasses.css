@@ -1,0 +1,51 @@
+/* CSS reset */
+* { margin: 0; padding: 0; border: 0; }
+*,*:before, *:after { box-sizing: border-box; }
+:focus, :active { outline: none; }
+html, body { width: 100%; height: 100%; font-size: 100%; line-height: 1; font-size: 14px; }
+header, footer, nav, aside, section, code { display: block; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+input, button, textarea { font-family: inherit; }
+button { cursor: pointer; }
+ul li { list-style: none; }
+img { vertical-align: top; }
+a:focus, a:active { outline: none; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* Pseudoclasses */
+body { padding: 30px; }
+.block { margin: 0 0 30px 0; font-size: 16px; line-height: 24px; }
+
+.link { color: #f00; }
+.link:hover { text-decoration: underline; color: #00f; }
+.link:visited { color: #0f0; }
+.link:active { color: #ff0; }
+
+.ti { width: 300px; height: 50px; margin: 0 0 10px 0; padding: 0 15px; font-size: 16px; border: 1px solid #888; }
+.ti:focus { box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
+
+.btn {
+	display: block;
+	width: 300px; height: 50px;
+	margin: 0 0 30px 0;
+	background-color: #888; color: #fff;
+	text-transform: uppercase;
+}
+
+.btn:hover { background-color: #555; }
+.btn:active { background-color: #aaa; }
+
+.list li { font-size: 16px; line-height: 24px; }
+.list li:first-child { color: #0f0; }
+.list li:last-child { color: #00f; }
+.list li:nth-child(3) { color: #f00; }
+.list li:nth-child(3):hover { text-decoration: underline; cursor: pointer; }
+.list li:nth-child(odd) { text-transform: uppercase; }
+.list li:nth-child(even) { font-weight: bold; }
+
+.list + div { margin: 30px 0; }
+
+input[type="checkbox"] { margin: 0 5px 0 0; vertical-align: middle; }
+input[type="checkbox"] + span { vertical-align: middle; }
+input[type="checkbox"]:checked + span { color: #f00; }

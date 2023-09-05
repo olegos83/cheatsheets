@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Useful META tags -->
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- <meta http-equiv="refresh" content="0; url=redirect.url"> -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+		<meta name="description" content="Page description">
+		<meta name="keywords" content="Keywords, coma separated, maximum 20 words">
+
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="robots" content="none">
+		<meta name="robots" content="noimageindex, nofollow">
+
+		<meta name="Author" content="Vasyok Pupkins">
+		<meta name="Copyright" content="Vasyok Pupkins">
+		<meta name="Address" content="Vasyok Pupkins address">
+
+		<!-- Page title -->
+		<title>HTML snippets for quick reference</title>
+
+		<!-- Page icon link methods -->
+		<link rel="icon" type="image/x-icon" href="path/to/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="path/to/favicon.ico" />
+
+		<!-- Add CSS and JS from external files -->
+		<link rel="stylesheet" type="text/css" href="path/to/style.css" />
+		<script type="text/javascript" src="path/to/script.js"></script>
+	</head>
+
+	<body>
+		<!-- Page header -->
+		<header>
+			<!-- Page title in <h1> tag - better to be single on the page-->
+			<h1>HTML snippets for quick reference</h1>
+		</header>
+
+		<!-- Navigation -->
+		<nav></nav>
+
+		<!-- Sidebar -->
+		<aside></aside>
+
+		<!-- Section -->
+		<section></section>
+
+		<!-- Unordered list (can have "type" attribute) -->
+		<ul>
+			<li>List item</li>
+			<li>List item</li>
+		</ul>
+
+		<!-- Ordered list (can have "start" and "reversed" attributes) -->
+		<ol>
+			<li>List item</li>
+			<li>List item</li>
+		</ol>
+
+		<!-- Definitions list-->
+		<dl>
+			<dt>Definition 1</dt>
+			<dd>Definition 1 description</dd>
+
+			<dt>Definition 2</dt>
+			<dd>Definition 2 description</dd>
+		</dl>
+
+		<!-- Article and text -->
+		<article>
+			<h2>Article title</h2>
+
+			<time>2020-02-27</time>
+			<address>Vasyok Pupkins address</address>
+
+			<p>Paragraph with some text.</p>
+			<abbr title="Abbreviation details">AD</abbr>
+			<mark>Marked text</mark>
+
+			<q>Quote in single line</q>
+			<blockquote>Quote inside block</blockquote>
+
+			<strong>Bold text with semantic accent</strong>
+			<em>Italic text with semantic accent</em>
+
+			<tt>Typing text</tt>
+			<s>Deleted text</s>
+
+			<del>Deleted text</del>
+			<ins>Inserted text</ins>
+
+			<big>Big text</big>
+			<small>Small text</small>
+
+			<sup>Superscripted text</sup>
+			<sub>Subscripted text</sub>
+
+			<pre>
+				Preformated text
+
+				<code>
+					//formated code sample
+					var o = { prop: "value" };
+				</code>
+			</pre>
+		</article>
+
+		<!-- Horizontal line -->
+		<hr>
+
+		<!-- Line break -->
+		<br>
+
+		<!-- Simple image -->
+		<img src="path/to/image.png" alt="Alt text" title="Title text" align="bottom|left|middle|right|top" />
+
+		<!-- Responsive image -->
+		<picture>
+			<source media="(min-width: 1024px)" srcset="path/to/image-1024.png">
+			<source media="(min-width: 768px)" srcset="path/to/image-768.png">
+			<source media="(min-width: 360px)" srcset="path/to/image-360.png">
+			<img src="path/to/image.png" alt="Alt text" />
+		</picture>
+
+		<!-- Image with semantic description (can contain multiply images) -->
+		<figure>
+			<img src="path/to/image.png" alt="Alt text" />
+			<figcaption>Image description</figcaption>
+		</figure>
+
+		<!-- Table with semantic sections -->
+		<table>
+			<caption>Table caption (optional)</caption>
+
+			<thead>
+				<tr><th>Head Col 1</th><th>Head Col 2</th></tr>
+			</thead>
+
+			<tbody>
+				<tr><td>Row 1 Col 1</td><td>Row 1 Col 2</td></tr>
+				<tr><td>Row 2 Col 1</td><td>Row 2 Col 2</td></tr>
+			</tbody>
+
+			<tfoot>
+				<tr><td>Foot Col 1</td><td>Foot Col 2</td></tr>
+			</tfoot>
+		</table>
+
+		<!-- Links -->
+		<a href="path/to/site">Simple link</a>
+		<a href="path/to/site" target="_blank">Simple link in new tab</a>
+		<a href="path/to/file" download>Download link</a>
+
+		<a href="mailto:vasyok@mail.net">Mail to Vasyok</a>
+		<a href="tel:+380888888888">+38 (088) 888 88 88</a>
+		<a href="skype:vasyok">Skype to Vasyok</a>
+
+		<a href="#label">Go to labeled section on the same page</a>
+		<div id="label">Section with label, pointed by upper link</div>
+
+		<!-- Buttons -->
+		<button type="button">Simple button</button>
+		<button type="button" disabled>Disabled button</button>
+		<button type="button" autofocus>Button with autofocus (can be pressed with space key)</button>
+
+		<!-- List of options with filtering -->
+		<input list="list">
+
+		<datalist id="list">
+			<option value="Option"></option>
+			<option value="One more option"></option>
+			<option value="Another option"></option>
+		</datalist>
+
+		<!-- Meter and progress bars -->
+		<meter min="0" max="100" low="20" high="80" value="55">Progress meter</meter>
+		<progress max="100" value="75"></progress>
+
+		<!-- Simple form (with autocomplete, method can be "get" or "post") -->
+		<form method="post" action="path/to/script" name="form_1" autocomplete="on">
+			<!-- Text input -->
+			<input type="text" name="ti_name" value="text">
+
+			<!-- Password input-->
+			<input type="password" value="pass">
+
+			<!-- Number -->
+			<input type="number" value="5" step="2" min="1" max="10">
+
+			<!-- Range -->
+			<input type="range" value="75">
+
+			<!-- Date and time -->
+			<input type="date" value="2020-03-11">
+			<input type="datetime-local" value="2020-03-11T15:35">
+			<input type="month" value="2020-03">
+			<input type="week" value="2020-W11">
+			<input type="time" value="15:35">
+
+			<!-- Color -->
+			<input type="color" value="#ff0000">
+
+			<!-- Email and URL -->
+			<input type="email" value="vasyok@mail.com">
+			<input type="url" value="https://vasyok.com">
+
+			<!-- Telephone -->
+			<input type="tel" value="+380881234567">
+
+			<!-- Search -->
+			<input type="search" value="search something">
+
+			<!-- File -->
+			<input type="file">
+			<input type="file" multiple>
+
+			<!-- Text area -->
+			<textarea rows="5" cols="15" name="ta_name"></textarea>
+
+			<!-- Dropdown list -->
+			<select name="dropdown_name">
+				<option value="Option">Option</option>
+				<option value="One more option">One more option</option>
+				<option value="Another option">Another option</option>
+
+				<optgroup label="Options group">
+					<option value="Option">Option</option>
+					<option value="One more option">One more option</option>
+				</optgroup>
+
+				<option value="Another option" label="Another option"></option>
+				<option value="Selected" selected>Selected option</option>
+				<option value="Disabled" disabled>Disabled option</option>
+			</select>
+
+			<!-- Multiple select -->
+			<select name="multiple_select" multiple>
+				<option value="Option">Option</option>
+				<option value="One more option">One more option</option>
+				<option value="Another option">Another option</option>
+			</select>
+
+			<!-- Checkbox -->
+			<input type="checkbox" name="cb_name" checked>
+
+			<!-- Radio buttons -->
+			<input type="radio" name="radio_group_name" value="radio_1" checked>
+			<input type="radio" name="radio_group_name" value="radio_2">
+
+			<!-- Hidden value -->
+			<input type="hidden" name="val_name" value="hidden value">
+
+			<!-- Fieldset for grouping form fields -->
+			<fieldset>
+				<legend>Legend for group of form fields</legend>
+
+				<input type="text" name="ti_1" value="ti_1 inside fieldset">
+				<input type="text" name="ti_2" value="ti_2 inside fieldset">
+			</fieldset>
+
+			<!-- Label (click on it will focus labeled element) -->
+			<label for="labeled_ti">Label for text input</label>
+			<input id="labeled_ti" type="text">
+
+			<label>Another label <input type="text"></label>
+
+			<!-- Form element attributes -->
+			<input type="text" value="Autofocused" autofocus>
+			<input type="text" value="Disabled" disabled>
+			<input type="text" value="Read only" readonly>
+			<input type="text" value="Required" required>
+			<input type="text" value="" placeholder="Placeholder to show when empty">
+			<input type="text" value="Max 12 chars" maxlength="12">
+
+			<!-- Submit button -->
+			<input type="submit" value="Submit button">
+			<input type="image" src="path/to/image" alt="Image submit button">
+
+			<!-- Reset button -->
+			<input type="reset" value="Reset button">
+		</form>
+
+		<!-- Audio -->
+		<audio src="path/to/audio">
+			Your browser does not support the audio tag.
+		</audio>
+
+		<!-- Audio with controls and source inside -->
+		<audio controls>
+			<source src="path/to/audio.mp3" type="audio/mpeg">
+			See media formats table to ensure browser support.
+		</audio>
+
+		<!-- Video -->
+		<video src="path/to/video">
+			Your browser does not support the video tag.
+		</video>
+
+		<!-- Video with controls and multiply sources for different browsers -->
+		<video controls width="320" height="240">
+			<source src="path/to/video.ogg" type="video/ogg">
+			<source src="path/to/video.mp4" type="video/mp4">
+		</video>
+
+		<!-- Video with other possible attributes -->
+		<video muted src="path/to/video"></video>
+		<video loop src="path/to/video"></video>
+		<video autoplay src="path/to/video"></video>
+		<video poster="path/to/image" src="path/to/video"></video>
+
+		<!-- Video preload (can be "auto", "metadata" or "none") -->
+		<video preload="auto" src="path/to/video">
+			Preload specifies if and how the author thinks the video should be loaded when the page loads.
+		</video>
+
+		<!-- Page footer -->
+		<footer>
+			<p>&copy; ONC corporaion</p>
+		</footer>
+	</body>
+</html>

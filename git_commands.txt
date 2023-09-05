@@ -1,0 +1,12 @@
+//basic config (must be done after git installation)
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+//init GIT repository
+git init
+
+//add changes to staging
+git add
+
+//commit
+git commit

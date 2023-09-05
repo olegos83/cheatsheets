@@ -1,0 +1,56 @@
+body { font-size: 14px; }
+h1, h2, h3, h4 { margin: 0; }
+h4 { margin-top: 20px; }
+hr { margin: 25px 0; }
+section { max-width: 1024px; margin: 0 auto; }
+
+.header { text-align: center; }
+.title { font-size: 35px; letter-spacing: 5px; }
+
+.flex_container {
+	display: flex; /* flex, inline-flex */
+	justify-content: space-around; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+	align-items: center; /* stretch, flex-start, flex-end, center, baseline */
+	flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+	border: 10px solid #ece89d;
+	margin: 5px 0;
+}
+
+.flex_container_direction {
+	height: 500px;
+	flex-direction: column; /* row, column, row-reverse, column-reverse */
+	justify-content: space-between;
+}
+
+.flex_element {
+	border: 10px solid #5e5373;
+	flex: 0 1 25%; /* Flex element 'flex-grow', 'flex-shrink' and 'flex-basis' properties shorthand */
+}
+
+.flex_element_1 {
+	align-self: stretch; /* stretch, flex-start, flex-end, center, baseline */
+	order: 3; /* Specifies flex element order inside flex container */
+	flex-basis: 50px; /* Specifies size of flex element (defaults to 'auto') */
+	flex-grow: 0.3; /* Sets flex element grow factor (defaults to '0') */
+	flex-shrink: 1; /* Sets flex element shrink factor (defaults to '1') */
+}
+
+.flex_element_2 {
+	order: 1;
+	flex-basis: 40%;
+}
+
+.flex_element_3 {
+	align-self: flex-end; /* Overrides flex container 'align-items' property */
+	order: 2;
+	flex-basis: 15%;
+}
+
+.flex_element_content {
+	background-color: #18b5a4;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+}
