@@ -5,8 +5,14 @@ git config --global user.name "Your Name"
 //init GIT repository
 git init
 
-//add changes to staging
-git add
+//add changes to staging (. is to add all changes)
+git add .
 
 //commit
-git commit
+git commit -m "Commit message"
+
+//show GIT status
+git status
+
+//show GIT log
+git log
