@@ -19,6 +19,9 @@
 	echo $dbl.": ".gettype($dbl)."\n";
 	echo $str.": ".gettype($str)."\n\n";
 
+	//type casting example - '(type_to_cast)$var'
+	echo "Cast integer variable type to string, ".$int.": ".gettype((string)$int)."\n\n";
+
 	echo $bool_true.": ".gettype($bool_true)."\n";
 	echo $bool_false.": ".gettype($bool_false)."\n";
 	echo $null.": ".gettype($null)."\n\n";
