@@ -16,3 +16,12 @@ git status
 
 //show GIT log
 git log
+
+//add remote repository
+git remote add origin https://your_repo.git
+
+//push master branch to remote repository
+git push -u origin master
+
+//push to remote repository
+git push
